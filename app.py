@@ -29,7 +29,7 @@ if upload_files:
         # file data show in lower case
         file_ext = os.path.splitext(file.name)[-1].lower()
 
-        if file_ext == '.cvs':
+        if file_ext == '.csv':
             df = pd.read_csv(file)
         elif file_ext == '.xlsx':
             df = pd.read_excel(file)
